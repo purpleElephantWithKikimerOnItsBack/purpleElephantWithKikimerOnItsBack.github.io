@@ -241,7 +241,7 @@ body {
 
 .post-description {
 	height: 60px;
-	overflow: overlay;
+	overflow: hidden;
 }
 
 .load-button {
