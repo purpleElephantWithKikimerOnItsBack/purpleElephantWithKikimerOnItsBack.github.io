@@ -5,14 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/rubik" type="text/css"/>
 	<link rel="stylesheet" type="text/css" href="styles.css"/>
-  <title>Интернет-магазин "AirPods"</title>
+  <title>Интернет-магазин "BezProvodov"</title>
 </head>
 <body>
   <main>
     <div class="product-presentation">
       <div class="topbar">
         <div class="shop-name">
-          Интернет-магазин "AirPods"
+          Интернет-магазин "BezProvodov"
         </div>
         <div class="topbar-order">
           <a href="#order-form" class="topbar-order-reference">Заказать товар</a>
@@ -24,15 +24,17 @@
         </div>
         <div class="product-description">
           <div class="product-name">
-            БЕСПРОВОДНЫЕ<br/>НАУШНИКИ <span class="red">AIRPODS</span>
+            БЕСПРОВОДНЫЕ<br/>НАУШНИКИ <span class="red"></br>HBQ TWS i11</span>
           </div>
           <div class="sale white-font">
-            СО СКИДКОЙ 83%
+            СО СКИДКОЙ 62%
+          </div>
+          <div class="prices">
+            <div class="price">69p</div>
+            <div class="price" id="prev-price"><s>179p</s></div>
           </div>
           <div class="product-qualities-small">
-            Никаких проводов.<br/>
-            Никаких сложностей.<br/>
-            Чистая магия.
+            Успей заказать со скидкой!
           </div>
           <a href="#order-form">
             <div class="anchor-to-form">
@@ -49,8 +51,8 @@
             сертифицированные</br>товары</li>
           <li><img src="src/mail-check.png"></br></br>Наушники проходят</br>
             тщательную проверку</br>перед отправкой</li>
-          <li><img src="src/plain-icon.png"></br></br>Быстрая доставка от </br>
-             семи рабочих</br>дней</li>
+          <li><img src="src/plain-icon.png"></br></br>Быстрая доставка</br>по
+            всей</br>Республике Беларусь</li>
           <li><img src="src/wallet-icon.png"></br></br>Оплата заказа по факту</br>
              получения</br>на руки</li>
         </ul>
@@ -59,7 +61,7 @@
     <div class="black">
       <div class="detailed-product-information">
         <div class="detailed-product-moto">
-          <span class="red">AIRPODS</span> - ЧИСТЫЙ ЗВУК. ОТЛИЧНАЯ</br>СЛЫШИМОСТЬ!
+          <span class="red">HBQ TWS i11</span> - ЧИСТЫЙ ЗВУК. ОТЛИЧНАЯ</br>СЛЫШИМОСТЬ!
         </div>
         <div class="detailed-product-images">
           <input checked type="radio" id="slide1" name="slide" class="hidden"/>
@@ -85,11 +87,15 @@
         </div>
         <div class="detailed-product-description">
           <ul class="detailed-product-description-list">
-            <li>Наушники обеспечивают высококачественное</br>воспроизведение аудио в формате AAC</li>
-            <li>А чтобы вас лучше слышали, сдвоенные направленные</br>
-              микрофоны уменьшают уровень фоновых шумов во время</br>звонков</li>
-            <li>Наушники быстро настраиваются и подключаются к любому</br>
-              телефону. Удобная конструкция наушников гаратирует</br>комфорт при ношении</li>
+            <li>Отличный звук</li>
+            <li>Безупречное качество</li>
+            <li>Современный дизайн</li>
+            <li>Доступная цена</li>
+            <li>Цвет: Белый</br>Беспроводной интерфейс: Bluetooth 5.0</br>
+              Емкость бокса-аккумулятора: 400 мАч</br> Емкость аккумулятора
+              наушников: 50 мАч</br>Время зарядки: около 1 часа</br>
+              Время работы в режиме постоянного прослушивания: от 2 до 3 часов</br>
+              Время работы в режиме приема звонков: от 2 до 6 часов</li>
           </ul>
         </div>
       </div>
@@ -152,24 +158,31 @@
       </div>
       <div class="product-description white">
         <div class="product-name black-font">
-          БЕСПРОВОДНЫЕ<br/>НАУШНИКИ <span class="red">AIRPODS</span>
+          БЕСПРОВОДНЫЕ<br/>НАУШНИКИ</br><span class="red">HBQ TWS i11</span>
+        </div>
+        <div class="sale">Скидка 62%</div>
+        <div class="prices" id="bottom-prices">
+          <div class="price" id="bottom-price">69p</div>
+          <div class="price" id="bottom-prev-price"><s>179p</s></div>
         </div>
         <form action="scripts/form-to-email.php" method="post" class="order-form">
           <input type="text" name="name" placeholder="Введите ваше имя"/>
           <input type="text" name="phone" placeholder="Введите ваш номер телефона"/>
           <input type="submit" name="submit" value="Оформить заказ" class="order-button"/>
         </form>
+        <div class="timer-container">
+          <p id="timer"></p>
+        </div>
     <div>
     <a name="order-form"></a>
   </main>
   <footer>
     <div class="company-information-container">
       <ul class="company-information">
-        <li class="company-information-item">ООО «Голд-сейл» г.Киев, ул. Васильковская, 42</li>
-        <li class="company-information-item">ОГРН 1115233004237</li>
-        <li class="company-information-item">ИНН 503003204058</li>
+        <li><a id="policy" href="privacy_policy.html">Privacy Policy</a></li>
       </ul>
     </div>
   </footer>
+  <script src="scripts/timer.js"></script>
 </body>
 </html>
